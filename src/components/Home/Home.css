@@ -1,0 +1,235 @@
+#Home{
+    /* background-image: url("../../assets/mirror.jpg"); */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* filter: brightness(0.5) */
+}
+#Home .bamp{
+    background: white;
+}
+#Home .carosels{
+    /* background: red; */
+    transition: 500ms ease;
+    z-index: 2;
+    /* background-image: url("../../assets/mirror.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#Home .carosel:nth-child(1){
+    background-image: url("../../assets/bible.jpg");
+    left: 0%;
+    z-index: 3;
+
+}
+#Home .carosel:nth-child(2){
+    background-image: url("../../assets/mirror.jpg");
+    z-index: 3;
+    left: 100%;
+}
+#Home .carosel:nth-child(3){
+    background-image: url("../../assets/half.jpg");
+    z-index: 3;
+    left: 200%;
+}
+#Home .carosel:nth-child(4){
+    background-image: url("../../assets/pray.jpg");
+    z-index: 3;
+    left: 300%;
+}
+#Home .carosel{
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.5)
+    
+}
+#Home .home-back{
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-shadow: 0 0 2px #666;
+    text-align: center;
+}
+#Home .home-back h1{
+    font-size: 10vh;
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+}
+#Home .home-back p{
+    font-size: 4vh;
+    font-family: "Montserrat", sans-serif;
+    line-height: 50%;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.violet{
+    background-color: violet;
+}
+
+.words{
+    background: transparent;
+}
+.camp{
+    background: teal;
+}
+
+
+#About{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150%;
+}
+#About .topSide{                        
+    /* background-color: black; */
+    width: 100%;
+    height: 25%;
+    background-image: url("../../assets/one.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+#About .bottomSide{
+    background: white;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* padding: 7.5% 5% 0; */
+    z-index: 2;
+    font-family: "Montserrat";
+}
+#About .bottomSide .stat{
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, 50%);
+    width: 60%;
+    height: 10%;
+    background: silver;
+    border-radius: 50px;
+    z-index: 5;
+}
+#About .bottomSide .top{
+    width: 100%;
+    height: 70%;
+    /* background: blue; */
+}
+
+#About .bottomSide .top .left{
+    height: 100%;
+    width: 50%;
+    /* background-color: pink; */
+}
+#About .bottomSide .top .left .tabs{
+    /* background: yellow; */
+    width: 95%;
+    height: 100%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+#About .bottomSide .top .left .tabs .tab{
+    box-shadow: 0 0 3px 1px #eee;
+}
+#About .bottomSide .top .right{
+    height: 100%;
+    width: 50%;
+    /* background-color: coral; */
+    padding: 0 7.5%;
+}
+#About .bottomSide .top .right h3{
+    font-size: 4vh;
+    margin-top: 15%;
+    /* border: 1px solid green; */
+    height: 15%;
+}
+#About .bottomSide .top .right p{
+    font-size: 1.7vh;
+}
+#About .bottomSide .bottom{
+    width: 100%;
+    height: 30%;
+    background: teal;
+}
+
+
+
+#Other{
+    /* background-color: #333; */
+}
+#Other .wrapper{
+    width: 100%;
+    height: 60%;
+    display: flex;  
+    flex-direction: column;
+    /* background: gold; */
+}
+#Other .wrapper .Marquee{
+    width: 80%;
+    margin: 0 10%;
+    height: 33%;
+    /* border: 5px solid red;    */
+    z-index: 80;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    user-select: none;
+    mask-image: linear-gradient(to right, hsl(0 0% 0% / 0), 
+        hsl(0 0% 0% / 1) 10%, 
+        hsl(0 0% 0% / 1) 90%, 
+        hsl(0 0% 0% / 0)
+    );
+}
+/* #Other Marquee{} */
+#Other .Marquee .MarqueeGroup{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    animation: scrollX linear infinite;
+}
+#Other .wrapper .Marquee:nth-child(1) .MarqueeGroup{
+    animation-duration: 12s;
+}
+#Other .wrapper .Marquee:nth-child(2) .MarqueeGroup{
+    animation-duration: 15s;
+}
+#Other .wrapper .Marquee:nth-child(3) .MarqueeGroup{
+    animation-duration: 18s;
+}
+#Other .Marquee .MarqueeGroup .tab{
+    height: 90%;
+    width: 19%;
+    /* border: 1px solid red; */
+    box-shadow: 0 0 3px 1px #ddd;
+    /* transition: 30s linear ease; */
+}
+
+@keyframes scrollX{
+    from{transform: translateX(0);}
+    to{transform: translateX(-100%);}
+}

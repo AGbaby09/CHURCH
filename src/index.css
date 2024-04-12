@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+.full{
+    width: 100%;
+    height: 100%;
+}
+.half{
+    width: 50%;
+    height: 50%;
+}
+.al-c{
+    display: flex;
+    align-items: center;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.spEven{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.scrolling{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform-origin: center;
+    height: 2.5%;
+    /* width: 100%; */
+    background-color: #666;
+    z-index: 200;
+}
