@@ -1,0 +1,172 @@
+#Events{
+    /* border: 5px solid red; */
+    /* background-color: blue; */
+    /* color: black; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#Events .evBg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
+#eventPopup{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 100;
+}
+#eventPopup .event{
+    width: 40%;
+    height: 70%;
+    border: 15px solid white;
+    background: white;
+    animation: plop 250ms ease;
+    transition: 250ms ease;
+}
+@keyframes plop {
+    from{
+        opacity: 0;
+        transform: translateY(10%) scale(0.95);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%) scale(1);
+    }
+}
+#eventPopup .event button.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    background:transparent;
+    outline: none;
+    border: none;
+    font-size: 5vh;
+    cursor: pointer;
+}
+#Events .eventer{
+    /* background: green; */
+    /* border: 5px solid goldenrod; */
+}
+#Events .eventer .Slider{
+    position: absolute;
+    /* border: 5px solid red; */
+    right: 2.5%;
+    top: 35%;
+    width: 50%;
+    height: 50%;
+    /* overflow: hidden; */
+}
+#Events .eventer .Slider h1{
+    height: 10%;
+    font-size: 7.5vh;
+    font-family: "Montserrat";
+    color: white;
+}
+#Events .eventer .Slider .swiperContainer{
+    height: 90%;
+    width: 100%;
+    z-index: 1;
+    /* background: white; */
+}
+#Events .eventer .Slider .swiperContainer .slide{
+    /* border: 5px solid green; */
+    width: 40%;
+    height: 60%;
+    margin: auto 1%;
+    /* border: 5px solid green; */
+}
+#Events .eventer .Slider .swiperContainer .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 5px 1px #aaa;
+    border-radius: 10px;
+    filter: brightness(0.7);
+}
+#Events .eventer .Slider .swiperContainer .sliderController{
+    position: absolute;
+    top: 85%;
+    width: 50%;
+    height: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid red; */
+    z-index: 2;
+}
+
+#Events .eventer .Slider .swiperContainer .sliderController button{
+    background: transparent;
+    color: white;
+    font-size: 2.5vh;
+    border-radius: 50%;
+    height: 5vh;
+    width: 5vh;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: 250ms ease;
+}
+#Events .eventer .Slider .swiperContainer .sliderController button:hover{
+    background-color: white;
+    color: black;
+}
+#Events .eventer .Slider .swiperContainer .sliderController div{
+    width: 60%;
+    /* background-color: red; */
+    /* background-color: red !important; */
+}
+#Events .eventer .Slider .swiperContainer .sliderController div span{
+    background-color: white !important;
+}
+
+
+#Events .eventsList{
+    width: 100%;
+    height: auto;
+}
+#Events .eventsList .heading{
+    /* background: rebeccapurple; */
+    width: 100%;
+    height: 20vh;
+    font-size: 8vh;
+    font-family: "Montserrat";
+    font-weight: 800;
+}
+#Events .eventsList .lineUp{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5vh;
+    padding: 2.5% 15%;
+}
+#Events .eventsList .lineUp .event{
+    width: 90%;
+    height: 40vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 40px 0px;
+    overflow: hidden;
+    border-radius: 20px;
+    /* background-color: gold; */
+}
+#Events .eventsList .lineUp .event .img{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+#Events .eventsList .lineUp .event .info{
+    width: 100%;
+    height: 40%;
+}

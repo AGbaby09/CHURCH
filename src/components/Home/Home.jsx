@@ -1,6 +1,8 @@
 import "./Home.css"
 import {useState, useRef} from "react"
 import { motion, useScroll, useSpring, useTransform, useInView } from "framer-motion";
+import { Tilt } from 'react-tilt'
+import Footer from "../Footer";
 
 const Home = () => {
     const ref = useRef(null);
@@ -30,18 +32,34 @@ const Home = () => {
         <section ref={ref} id="Home" className="full">
             <motion.div className="scrolling" style={{ scaleX }}/>
             <div className="carosels full" style={{transform: `translateX(-${slider}%)`}}>
-                {/* <div className="carosel full"></div>
                 <div className="carosel full"></div>
                 <div className="carosel full"></div>
-                <div className="carosel full"></div> */}
+                <div className="carosel full"></div>
+                <div className="carosel full"></div>
             </div>
             <div className="home-back full center">
                 <motion.h1 initial={{opacity: 0, y: 50}} animate={{opacity: 1, y: 0}}>BENJAMIN FORDJOUR</motion.h1>
                 <p>MINISTRIES</p>
             </div>
             <About />
-            <div className="bamp full"></div>
-            <Other />
+            <div className="bamp full spEven">
+                <Tilt className="tiltcard" data-tilt-glare>
+                    <h2 className="center">Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe minima blanditiis molestias non, eveniet voluptatibus aspernatur magnam quisquam amet ex natus enim facere iste, libero deserunt fuga sint vitae velit voluptatum dolorem! Facere, neque. Voluptas!</p>
+                    <button>Read more...</button>
+                </Tilt>
+                <Tilt className="tiltcard" data-tilt-glare>
+                    <h2 className="center">Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe minima blanditiis molestias non, eveniet voluptatibus aspernatur magnam quisquam amet ex natus enim facere iste, libero deserunt fuga sint vitae velit voluptatum dolorem! Facere, neque. Voluptas!</p>
+                    <button>Read more...</button>
+                </Tilt>
+                <Tilt className="tiltcard" data-tilt-glare>
+                    <h2 className="center">Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe minima blanditiis molestias non, eveniet voluptatibus aspernatur magnam quisquam amet ex natus enim facere iste, libero deserunt fuga sint vitae velit voluptatum dolorem! Facere, neque. Voluptas!</p>
+                    <button>Read more...</button>
+                </Tilt>
+            </div>
+            <Footer />
         </section>
         
         </>
@@ -78,9 +96,9 @@ const About = () => {
     return(
         <motion.section id="About" className="">
             <motion.div
-                initial={{opacity: 0}}
-                whileInView={{opacity: 1}}
-                viewport={{margin: "100% 0px -35% 0px"}}
+                initial={{ y: -10}}
+                whileInView={{ y: 0}}
+                viewport={{margin: "100% 0px -10% 0px"}}
             className="topSide">
                 <h1>About Us</h1>
             </motion.div>
@@ -93,7 +111,10 @@ const About = () => {
                 <div className="top spBtn">
                     <div className="left center">
                         <div className="tabs">
-
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div> 
                         </div>
                     </div>
                     <div className="right">
@@ -101,7 +122,48 @@ const About = () => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt dolor accusamus unde? Quisquam repellendus consequatur minus mollitia assumenda harum blanditiis quasi debitis, qui doloribus earum nihil, deserunt consequuntur impedit. Quia corporis similique sit dolor, nobis rem voluptates autem cupiditate reiciendis natus ea eaque officiis accusamus laudantium blanditiis quas praesentium in nostrum sed beatae illo laboriosam repudiandae minus temporibus! Reiciendis incidunt optio eius facilis suscipit non assumenda totam officiis dolorem. Ipsa animi eum incidunt eos, itaque quas adipisci, quidem voluptates rem eligendi tempora perferendis est tenetur nesciunt veritatis aspernatur officiis corporis, doloremque consequatur. Aut consequatur saepe hic recusandae ullam ut, tempora accusamus at laudantium! Eligendi alias optio dolorem quaerat non quia vero provident sint quibusdam aliquid. Ab non aliquid eos quia accusantium sapiente, quas quod, aspernatur labore explicabo temporibus totam architecto vitae quae veritatis repudiandae dicta nemo enim corrupti similique nostrum dolor. Deleniti numquam accusamus eligendi, tempora nobis odit deserunt eos soluta facere totam quibusdam neque, illum sit officia animi architecto quisquam sint tempore. Iste minima error dolore ex at quasi nihil dolor vitae atque libero quo, delectus porro expedita nulla quibusdam cumque corporis velit. Fugiat, sequi earum porro velit commodi eos ut neque officia doloribus quibusdam cupiditate deserunt ratione provident.</p>
                     </div>
                 </div>
-                <div className="bottom"></div>
+                <div className="bottom center">
+                    <motion.div
+                        initial={{opacity: 0, y: 20}}
+                        whileInView={{opacity: 1, y:0}}
+                        viewport={{margin: "100% 0px -50% 0px"}}
+                        className="one caro">
+                        <div className="group">
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                        </div>
+                        <div className="group">
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        initial={{opacity: 0, y: 20}}
+                        whileInView={{opacity: 1, y:0}}
+                        viewport={{margin: "100% 0px -30% 0px"}}
+                        className="two caro">
+                        <div className="group">
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                        </div>
+                        <div className="group">
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                            <div className="tab"></div>
+                        </div>
+                    </motion.div>
+                </div>
             </motion.div>
         </motion.section>
     )
@@ -176,3 +238,5 @@ const Other = () => {
         </section>
     )
 }
+
+

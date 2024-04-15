@@ -1,0 +1,236 @@
+#NewHome{
+    transition: 0.5s;max-width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    display: block;
+}
+#Banner{
+    transition: 0.5s;
+    max-width: 100%;
+}
+#Banner .Carosels{
+    transition: 0.5s;
+    max-width: 100%;
+    
+}
+#Banner .Carosels .Carosel{
+    position: absolute;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#Banner .Carosels .Carosel img{
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.6);
+    /* background: url("../../assets/new.jpeg"); */
+}
+#Banner .Carosels .Carosel:nth-child(1){
+    left: 0%;
+    background: #555;
+    /* background: url("../../assets/new.jpeg");  */
+}
+#Banner .Carosels .Carosel:nth-child(2){
+    left: 100%;
+    background: #666;
+    /* background: url("../../assets/half.jpg"); */
+}
+#Banner .Carosels .Carosel:nth-child(3){
+    left: 200%;  
+    background: #777;
+    /* background: url("../../assets/one.jpg"); */
+}
+#Banner .Carosels .Carosel:nth-child(4){
+    background: #888;
+    /* background: url("../../assets/mirror.jpg"); */
+    left: 300%;
+}
+
+
+article.Desc{
+    height: 30%;
+    width: 100%
+}
+article.Desc .tab{
+    width: 25%;
+    height: 100%;
+}
+article.Desc .tab:nth-child(1){
+    background: #444;
+}
+article.Desc .tab:nth-child(2){
+    background: #333;
+}
+article.Desc .tab:nth-child(3){
+    background: #222;
+}
+article.Desc .tab:nth-child(4){
+    background: #111;
+}
+
+article.Sermons{
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+article.Sermons>h1{
+    font-size: 5vh;
+    font-family: "Montserrat";
+    /* border: 1px solid red; */
+    height: 15%;
+    width: 100%;
+    padding: 0 5%;
+    overflow: hidden;
+}
+article.Sermons>.videos{
+    height: 50%;
+    width: 100%;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+article.Sermons>.videos>div{
+    height: 100%;
+}
+article.Sermons>.videos>.left{
+    width: 69.96%;
+    background: black;
+}
+article.Sermons>.videos>.left>video{
+    width: 80%;
+    height: 90%;
+}
+article.Sermons>.videos>.right{
+    width: 30%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* padding: 0 5%; */
+}
+article.Sermons>.videos>.right .tab{
+    width: 100%;
+    height: 35%;
+    padding: 0 2.5%;
+}
+article.Sermons>.videos>.right .tab .vid{
+    width: 40%;
+    height: 100%;
+}
+article.Sermons>.videos>.right .tab .vid .img{
+    width: 90%;
+    height: 80%;
+    background: #eee;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 40px 0px;
+}
+article.Sermons>.videos>.right .tab .vid button{
+    background: white;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    border: none;
+}
+article.Sermons>.videos>.right .tab .vid button ion-icon{
+    color: #aaa;
+    font-size: 1.9vh;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}
+article.Sermons>.videos>.right .tab .details{
+    width: 60%;
+    padding: 0 5%;
+    font-family: "Poppins";
+    /* border: 1px solid red; */
+    display: block;
+    height: 80%;
+}
+article.Sermons>.videos>.right .tab .details h4{
+    font-size: 1.7vh;
+    height: 15%;
+    width: 100%;
+    overflow:hidden;
+    /* background: aqua; */
+    margin-top: 3%;
+}
+article.Sermons>.videos>.right .tab .details p{
+    font-size: 1.5vh;
+    max-height: 60%;
+    width: 100%;
+    overflow:hidden;
+    /* background: gold; */
+}
+
+article.Sermons>.podcasts{
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
+}
+article.Sermons>.podcasts .audio{
+    height: 80%;
+    width: 15%;
+    /* background: red; */
+    z-index: 1;
+    top: 0;
+    margin: auto 1%;
+}
+article.Sermons>.podcasts .audio .tiltcard{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 40px 0px;
+    transition: 150ms ease;
+}
+#Join{
+    margin-top: 5%;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0);
+}
+#Join .flat{
+    position: absolute;
+    top: 0;
+    display: grid;
+    /* place-content: center; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("../../assets/pray.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins";
+    z-index: 2;
+}
+#Join .flat h1{
+    color: white;
+    font-size: 6.5vh;
+    width: 100%;
+    top: 25%;
+}
+#Join .flat button{
+    top: -25%;
+    background: transparent;
+    outline: 5px solid white;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+    color: white;
+    width: 15%;
+    font-size: 1.7vh;
+    font-family: "Poppins";
+    height: 30%;
+    margin: 0 auto;
+    font-weight: 500;
+    transition: 250ms ease;
+}
+#Join .flat button:hover{
+    background: white;
+    color: black;
+    transition: 250ms ease;
+    font-weight: 500;
+}
+#Logoos{
+    width: 100%;
+    height: 20%;
+    /* background: gold; */
+}

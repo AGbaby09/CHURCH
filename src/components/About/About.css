@@ -1,0 +1,237 @@
+.space{
+    height: 100%;
+    width: 100%;
+    /* top:1%; */
+    background: #fff;
+    /* position: sticky; */
+    /* top: 10%; */
+    z-index: 10;
+}
+.space img{
+    object-position: top;
+    object-fit: cover;
+    filter: brightness(0);
+}
+.space .board{
+    /* position:absolute; */
+    background: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+    width: 80%;
+    height: 70%;
+    /* border: 1px solid red; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 30; */
+}
+.space .board::after{
+    content: "";
+    position: absolute;
+    background: silver;
+    width: 100%;
+    height: 100%;
+    top: 7.5%;
+    left: 3%;
+    z-index: 1;
+}
+.space .text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 81%;
+    font-size: 7.5vh;
+    display: block;
+    color: white;
+    font-family: "Poppins";
+    line-height: 100%;
+    text-shadow: 0 0 3px #000;
+    display: none;
+}
+.space .text .shift{
+    left: 50%;
+    color: black;
+    text-shadow: none;
+}
+#About{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400%;
+    
+}
+#About .Bio{
+    width: 100%;
+    height: 200%;
+    z-index: 5;
+    /* background-color: gold; */
+    /* top: 35%; */
+    /* border:5px solid red; */
+    /* visibility: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* overflow: hidden; */
+}
+#About .Bio div{
+    width: 50%;
+    height: 100%;
+    /* mix-blend-mode: difference; */
+    /* position: sticky; */
+}
+#About .Bio .profile{
+    /* background: url("../../assets/port.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    /* border: 1px solid red; */
+    height: 50%;
+    position: sticky;
+    /* top: 0; */
+    top: 10%;
+    
+}
+#About .Bio .profile .img{
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    /* mask-image: linear-gradient(to bottom, hsl(0 0% 0% / 0), 
+        hsl(0 0% 0% / 1) 10%, 
+        hsl(0 0% 0% / 1) 90%, 
+        hsl(0 0% 0% / 0)
+    ); */
+}
+#About .Bio .profile .img img{
+    width: 50%;
+    height: 70%;
+    /* filter: opacity(0); */
+    background-color: silver;
+    bottom: 5%;
+}
+#About .Bio .profile .img::before{
+    content: "";
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 50%;
+    height: 70%;
+    background: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+}
+#About .Bio .profile .img .info{
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 0 2px 1px #ddd;
+    right: 0;
+    top: 25%;
+    font-family: "Montserrat";
+    font-size: 2vh;
+    padding: 2.5% 5%;
+}
+#About .Bio .graphy{
+    overflow: hidden;
+}
+#About .Bio .graphy h2{
+    height: 25%;
+    /* border: 1px solid black; */
+    /* margin-top: 15%; */
+    font-size: 10vh;
+    font-family: "Roboto Slab";
+    padding: 0 5%;
+    text-align: center;
+}
+#About .Bio .graphy p{
+    padding: 0 15%;
+    font-size: 2vh;
+    font-family: "Montserrat";
+    line-height: 200%;
+}   
+
+#Company{
+    width: 100%;
+    height: 200%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#Company .top{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 10%;
+}
+#Company .top .tab{
+    height: 25%;
+    border: 1px solid #eee;
+    display: flex;
+    mask-image: linear-gradient(to right, hsl(0 0% 0% / 0), 
+        hsl(0 0% 0% / 1) 50%, 
+        hsl(0 0% 0% / 1) 30%, 
+        hsl(0 0% 0% / 0)
+    );
+    bottom: 5%;
+    
+}
+#Company .top .tab .tile{
+    flex-grow: 0.9;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #aaa;
+    margin: auto;
+    /* background: url("../../assets/new.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin: 0 0.25%;
+
+}
+.tab1{
+    /* background: gold; */
+    width: 70%;
+}
+.tab2{
+    /* background: gold; */
+    width: 90%;
+}
+.tab3{
+    /* background: gold; */
+    width: 70%;
+}
+
+#Company .mid{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#Company .mid .left{
+    width: 100%;
+    height: 50%;
+    /* background: gold; */
+    padding: 0 15%;
+}
+#Company .mid .left h1{
+    font-size: 10vh;
+    text-align: justify;
+    font-family: "Roboto Slab";
+}
+#Company .mid .left p{
+    font-size: 2vh;
+    text-align: justify;
+    font-family: "Montserrat";
+    line-height: 200%;
+}
+#Company .mid .right{
+    width: 100%;
+    height: 50%;
+    font-size: 2vh;
+    font-family: "Montserrat";
+    line-height: 200%;
+    padding: 0 15%;
+}

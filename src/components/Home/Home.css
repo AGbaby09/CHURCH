@@ -1,15 +1,55 @@
 #Home{
-    /* background-image: url("../../assets/mirror.jpg"); */
+    background-image: url("../../assets/one.jpg");
     overflow-y: scroll;
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     /* filter: brightness(0.5) */
+    
 }
 #Home .bamp{
-    background: white;
+    background: rgba(0, 0, 0, 0.6);
 }
+#Home .bamp .tiltcard{
+    width: 25%;
+    height: 60%;
+    background: rgba(225, 225, 225, 0.25);
+    border-radius: 10px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    transition: 250ms ease;
+    text-align: center;
+}
+#Home .bamp .tiltcard:hover{
+    /* transform: scale(1.1) !important; */
+}
+#Home .bamp .tiltcard h2{
+    font-size: 5vh;
+    /* margin: 2.5% 0;
+    padding: 0 5%; */
+    height: 20%;
+    font-family: "Roboto Slab";
+    color: white;
+}
+#Home .bamp .tiltcard p{
+    font-size: 1.7vh;
+    margin: 0;
+    padding: 0 7.5%;
+    height: 70%;
+    font-family: "Montserrat";
+    color: white;
+}
+#Home .bamp .tiltcard button{
+    font-size: 1.5vh;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Poppins";
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+}
+
 #Home .carosels{
     /* background: red; */
     transition: 500ms ease;
@@ -97,10 +137,10 @@
     height: 150%;
 }
 #About .topSide{                        
-    /* background-color: black; */
+    background-color: transparent;
     width: 100%;
     height: 25%;
-    background-image: url("../../assets/one.jpg");
+    /* background-image: url("../../assets/one.jpg"); */
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -142,14 +182,18 @@
 #About .bottomSide .top .left .tabs{
     /* background: yellow; */
     width: 95%;
-    height: 100%;
-    margin-left: 15%;
+    height: 80%;
+    margin-left: 20%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 #About .bottomSide .top .left .tabs .tab{
     box-shadow: 0 0 3px 1px #eee;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    border-radius: 15px;
 }
 #About .bottomSide .top .right{
     height: 100%;
@@ -169,13 +213,49 @@
 #About .bottomSide .bottom{
     width: 100%;
     height: 30%;
-    background: teal;
+    /* background: teal; */
+    display: flex;
+    flex-direction: column;
+}
+#About .bottomSide .bottom>div{
+    width: 90%;
+    height: 50%;
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    user-select: none;
+    /* border: 1px solid red; */
+    mask-image: linear-gradient(to right, hsl(0 0% 0% / 0), 
+        hsl(0 0% 0% / 1) 10%, 
+        hsl(0 0% 0% / 1) 90%, 
+        hsl(0 0% 0% / 0)
+    );
+}
+#About .bottomSide .bottom>div .group{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    white-space: nowrap;                       
+    width: 100%;
+    height: 100%;
+    
+}
+#About .bottomSide .bottom>div.one .group{animation: scrollX 20s linear infinite;}
+#About .bottomSide .bottom>div.two .group{left: -100%;animation: scrollTX 20s linear infinite;}
+#About .bottomSide .bottom>div .group .tab{
+    height: 90%;
+    width: 19%;
+    /* border: 1px solid red; */
+    box-shadow: 0 0 3px 1px #ddd;
+    /* transition: 30s linear ease; */
 }
 
 
-
 #Other{
-    /* background-color: #333; */
+    background-color: #fff;
 }
 #Other .wrapper{
     width: 100%;
@@ -232,4 +312,8 @@
 @keyframes scrollX{
     from{transform: translateX(0);}
     to{transform: translateX(-100%);}
+}
+@keyframes scrollTX{
+    from{transform: translateX(0);}
+    to{transform: translateX(100%);}
 }

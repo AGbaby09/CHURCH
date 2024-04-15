@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Noto Serif Display", serif; */
+
+#NewAbout{
+    z-index: 1;
+    display: block;
+}
+#NewAbout .aboutTop{
+    /* top: 0; */
+    width: 100%;
+    height: 75%;
+    background: transparent;
+    z-index: 3;
+    display: block;
+} 
+#NewAbout .aboutTop .aboutTitle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    z-index: 1;
+    color: #fff;
+    /* mix-blend-mode: difference; */
+    font-size: 15vh;
+    width: 100%;
+    font-weight: 100;
+    font-family: "Poppins";
+}
+
+
+/* #NewAbout .aboutTop{} */
+#NewAbout .aboutPage{
+    width: 100%;
+    height: 200%;
+    background: #eee0;
+    z-index: 2;
+    overflow: hidden;
+} 
+#NewAbout .aboutPage .one{
+    height: 50%;
+    width: 100%;
+    background-color: transparent;
+}
+#NewAbout .aboutPage .one .icon{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7.5vh;
+    height: 7.5vh;
+}
+#NewAbout .aboutPage .one .icon lord-icon{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+#NewAbout .aboutPage .one .right{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    
+}
+#NewAbout .aboutPage .one .right .clip{
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+    width: 55%;
+    height: 75%;
+    background: rgb(226, 222, 215, 0.3);
+    display: none;
+}
+#NewAbout .aboutPage .two{
+    height: 50%;
+    width: 100%;
+    background-color: teal;
+}
+#NewAbout .hanger{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../../assets/choir.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    transition: 0.25s ease;
+}
+/* #NewAbout{} */ 
