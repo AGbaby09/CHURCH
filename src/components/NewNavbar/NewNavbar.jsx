@@ -22,19 +22,25 @@ const NewNavbar = ({blur}) => {
                     <NavLink className={"center"} to={"/about"}>About Us</NavLink>
                 </li>
                 <li className="center">
+                    <NavLink className={"center"} to={"/ministries"}>Ministries</NavLink>
+                </li>
+                <li className="center">
+                    <NavLink className={"center"} to={"/foundation"}>Foundation</NavLink>
+                </li>
+                <li className="center">
                     <NavLink className={"center"} to={"/events"}>Events</NavLink>
+                </li>
+                <li className="center">
+                    <NavLink className={"center"} to={"/nuggets"}>Wisdom Nuggets</NavLink>
                 </li>
                 <li className="center">
                     <NavLink className={"center"} to={"/gallery"}>Gallery</NavLink>
                 </li>
                 <li className="center">
-                    <NavLink className={"center"} to={"/ministries"}>Ministries</NavLink>
-                </li>
-                <li className="center">
-                    <NavLink className={"center"} to={"/donate"}>Donate</NavLink>
-                </li>
-                <li className="center">
                     <NavLink className={"center"} to={"/contact"}>Contact Us</NavLink>
+                </li>
+                <li className="center donateBtn" >
+                    <NavLink className={"center"} to={"/donate"}>Donate</NavLink>
                 </li>
             </ul>
 

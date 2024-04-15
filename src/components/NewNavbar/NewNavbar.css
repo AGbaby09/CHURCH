@@ -26,13 +26,13 @@
 }
 #NewNavbar ul#links{
     background: transparent;
-    width: 50%; 
+    width: 60%; 
     height: 100%;   
     list-style-type: none;
-    padding: 0 5%;
+    padding: 0%;
 }
 #NewNavbar ul#links li{
-    width: 19%;
+    width: auto;
     height: 100%;
 }
 #NewNavbar ul#links li a{
@@ -42,18 +42,33 @@
     -webkit-text-stroke-width: 0.1px;
     /* mix-blend-mode: difference !important; */
     height: 45%;
-    width: 90%;
+    width: auto;
     font-family: "Poppins";
     font-size: 1.5vh;
     font-weight: 400;
     transition: 250ms linear;
     transform-origin: center;
+    padding: 0 10%;
+    display: flex;
+    text-wrap: nowrap;
 }
 #NewNavbar ul#links li a:hover{
     background-color: white;
     color: black;
 }
-
+#NewNavbar ul#links li.donateBtn a{
+    height: 50%;
+    padding: 0 40%;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    /* width: 45%; */
+    transition: 200ms ease;
+    font-size: 1.5vh;
+    background: linear-gradient( to bottom right,rgba(255, 0, 0, 0.65), rgba(255, 0, 0, 0.8), #FF1E1F);
+    box-shadow: 0 2px 15px 1px rgba(255, 0, 0, 0.45);
+}
+    
 #NewNavbar #socials{
     width: 15%;
 }
@@ -65,4 +80,23 @@
     font-size: 2.25vh;
     margin: 1%;
     color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* CSS rules specific to mobile screens */
+    /* For example: */
+    #NewNavbar{
+        background: red;
+        height: 7.5%;
+    }
+    #NewNavbar #logo{
+        font-size: 2.5vh;
+    }
+    #NewNavbar ul#links{
+        background-color: green;
+        height: 1600% !important;
+        position: absolute;
+        right: 0;
+    }
 }
