@@ -83,20 +83,3 @@
 }
 
 
-@media only screen and (max-width: 768px) {
-    /* CSS rules specific to mobile screens */
-    /* For example: */
-    #NewNavbar{
-        background: red;
-        height: 7.5%;
-    }
-    #NewNavbar #logo{
-        font-size: 2.5vh;
-    }
-    #NewNavbar ul#links{
-        background-color: green;
-        height: 2565% !important;
-        position: absolute;
-        right: 0;
-    }
-}
