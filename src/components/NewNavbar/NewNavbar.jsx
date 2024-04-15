@@ -25,13 +25,13 @@ const NewNavbar = ({blur}) => {
                     <NavLink className={"center"} to={"/ministries"}>Ministries</NavLink>
                 </li>
                 <li className="center">
-                    <NavLink className={"center"} to={"/foundation"}>Foundation</NavLink>
+                    <NavLink className={"center"} to={"/"}>Foundation</NavLink>
                 </li>
                 <li className="center">
                     <NavLink className={"center"} to={"/events"}>Events</NavLink>
                 </li>
                 <li className="center">
-                    <NavLink className={"center"} to={"/nuggets"}>Wisdom Nuggets</NavLink>
+                    <NavLink className={"center"} to={"/"}>Wisdom Nuggets</NavLink>
                 </li>
                 <li className="center">
                     <NavLink className={"center"} to={"/gallery"}>Gallery</NavLink>
