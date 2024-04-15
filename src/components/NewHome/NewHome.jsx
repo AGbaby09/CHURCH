@@ -139,8 +139,9 @@ const Sermons = () => {
         <motion.article initial={{opacity: 0, y: 25}} viewport={{margin: "100% 0px -50% 0px"}} whileInView={{opacity: 1, y: 0}} className="Sermons">
             <h1 className="center">
                 <i className="bx bx-tv"></i>
-                Watch Our Latest Sermons
-                
+                Latest Sermons and 
+                <ion-icon name="mic-outline"></ion-icon>
+                Podcasts
             </h1>
             <div className="videos spBtn">
                 <div className="left center">
